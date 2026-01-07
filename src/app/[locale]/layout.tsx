@@ -1,4 +1,5 @@
 import { NextIntlClientProvider } from 'next-intl';
+export const runtime = 'edge';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
