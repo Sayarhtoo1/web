@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import { createClient } from "@/lib/supabase/server";
 import { Plus, Search } from "lucide-react";
 import CategoryForm from "@/components/admin/CategoryForm";

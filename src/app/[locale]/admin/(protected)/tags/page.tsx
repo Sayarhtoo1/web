@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import { createClient } from "@/lib/supabase/server";
 import { Plus, Search, Tag } from "lucide-react";
 import TagForm from "@/components/admin/TagForm";

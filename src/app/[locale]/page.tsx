@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import { getTranslations } from 'next-intl/server';
 import { createClient } from '@/lib/supabase/server';
 import PostCard from '@/components/features/PostCard';

@@ -1,4 +1,5 @@
 "use client";
+export const runtime = 'edge';
 
 import { createClient } from "@/lib/supabase/client";
 import { useRouter } from "@/i18n/routing";

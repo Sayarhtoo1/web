@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import { createClient } from "@/lib/supabase/server";
 import { FileText, CheckCircle, FolderOpen, Download, Clock, Eye } from "lucide-react";
 import { Link } from "@/i18n/routing";

@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import { Heart, BookOpen, Smartphone, Users } from "lucide-react";
 import Image from "next/image";
 import { Link } from "@/i18n/routing";

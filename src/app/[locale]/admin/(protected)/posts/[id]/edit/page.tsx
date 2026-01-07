@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import PostForm from "@/components/admin/PostForm";
 import { createClient } from "@/lib/supabase/server";
 import { notFound } from "next/navigation";

@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import { createClient } from '@/lib/supabase/server';
 import { Link } from '@/i18n/routing';
 import { Folder, ArrowRight, Sparkles } from 'lucide-react';
