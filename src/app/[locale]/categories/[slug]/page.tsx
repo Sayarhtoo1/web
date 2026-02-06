@@ -12,13 +12,14 @@ export default async function CategoryDetailPage({
     params: Promise<{ locale: string; slug: string }>;
 }) {
     const { locale, slug } = await params;
+    const decodedSlug = decodeURIComponent(slug);
     const supabase = await createClient();
 
     // Fetch category
     const { data: category } = await supabase
         .from('categories')
         .select('*')
-        .eq('slug', slug)
+        .eq('slug', decodedSlug)
         .single();
 
     if (!category) {

@@ -1,7 +1,7 @@
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "@/i18n/routing";
 import { Link } from "@/i18n/routing";
-import { LayoutDashboard, FileText, FolderOpen, Tag, LogOut, Menu, X, Home } from "lucide-react";
+import { LayoutDashboard, FileText, FolderOpen, Tag, LogOut, Menu, X, Home, Download } from "lucide-react";
 import AdminMobileNav from "@/components/admin/AdminMobileNav";
 
 const navItems = [
@@ -9,6 +9,7 @@ const navItems = [
     { label: "Posts", href: "/admin/posts", icon: FileText },
     { label: "Categories", href: "/admin/categories", icon: FolderOpen },
     { label: "Tags", href: "/admin/tags", icon: Tag },
+    { label: "Downloads", href: "/admin/downloads", icon: Download },
 ];
 
 export default async function AdminLayout({
@@ -92,7 +93,8 @@ export default async function AdminLayout({
                     iconName: item.label === 'Dashboard' ? 'LayoutDashboard' :
                         item.label === 'Posts' ? 'FileText' :
                             item.label === 'Categories' ? 'FolderOpen' :
-                                'Tag'
+                                item.label === 'Tags' ? 'Tag' :
+                                    item.label === 'Downloads' ? 'Download' : 'FileText'
                 }))}
                 userEmail={user?.email || ''}
             />

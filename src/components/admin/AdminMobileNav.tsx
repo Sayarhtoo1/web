@@ -1,7 +1,7 @@
 "use client";
 
 import { Link, usePathname } from "@/i18n/routing";
-import { Menu, X, LogOut, Home, LayoutDashboard, FileText, FolderOpen, Tag } from "lucide-react";
+import { Menu, X, LogOut, Home, LayoutDashboard, FileText, FolderOpen, Tag, Download } from "lucide-react";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 
@@ -20,7 +20,8 @@ const iconMap: Record<string, any> = {
     LayoutDashboard,
     FileText,
     FolderOpen,
-    Tag
+    Tag,
+    Download
 };
 
 export default function AdminMobileNav({ navItems, userEmail }: AdminMobileNavProps) {
